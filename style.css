@@ -128,7 +128,7 @@ p{
   
   
     .container1 .container {
-      flex: 1; 
+      flex: 0.5; 
       margin-bottom: 10px;
     }
   }
@@ -136,7 +136,7 @@ p{
 
   @media screen and (max-width: 480px) {
     .header {
-      font-size: 18px; 
+      font-size: 10px; 
     }
   }
 
