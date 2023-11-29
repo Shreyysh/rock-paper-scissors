@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Onest:wght@300&family=Quicksand:wght@500&family=Space+Grotesk:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Space grotesk', sans-serif;
+    background-color: #272829;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    margin-bottom: 60px;
+    font-weight: 400;
+    color: #272829;
+    background-color: rgb(255, 246, 224);
+    margin-left: 0px;
+    margin-right: 0px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 70vh;
+   width: 650px;
+   padding: 0px 50px 0px 50px;
+   background-color: rgba(97, 103, 122, 0.55);
+   border-radius: 20px;
+
+   box-shadow: 3px 3px 3px 3px rgba(255, 246, 224, 0.09);
+}
+
+.score-board {
+    border: 5px solid #D8D9DA;
+    border-radius: 5px;
+    padding: 20px 50px 20px 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.score {
+    font-size: 40px;
+    color: #D8D9DA;
+}
+
+.user {
+    position: absolute;
+    top: 35px;
+    left: -20px;
+    background-color:rgb(255, 246, 224);
+    padding: 3px;
+    color: #272829;
+}
+
+.computer {
+    position: absolute;
+    top: 35px;
+    right: -30px;
+    background-color:rgb(255, 246, 224);
+    padding: 3px;
+    color: #272829;
+}
+
+p{
+    font-size: 20px;
+    color: #FFF6E0;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.imgs > img{
+    height: 100px;
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    border: 5px solid #D8D9DA;
+    border-radius: 20%;
+    padding: 20px 30px 20px 30px;
+
+    transition: all 0.5s ease;
+}
+
+.imgs > img:hover {
+    background-color: #FFF6E0;
+}
+
+#msg {
+    font-size: 20px;
+    color: #FFF6E0;
+    font-weight: 500;
+}
+
+.imgs > img:active {
+    animation: clicked 0.3s backwards;
+}
+
+@keyframes clicked {
+    0%, 50% {
+        background-color: #FFF6E0;
+    }
+    50%, 100% {
+        background-color: #272829;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .container1 {
+      flex-direction: column; 
+    }
+  
+  
+    .container1 .container {
+      flex: 1; 
+      margin-bottom: 10px;
+    }
+  }
+  
+
+  @media screen and (max-width: 480px) {
+    .header {
+      font-size: 18px; 
+    }
+  }
+
+
+
+
+
+
+
