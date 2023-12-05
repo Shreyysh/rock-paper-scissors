@@ -75,13 +75,13 @@ function win(user_choice, compchoice) {
     userscore_span.innerHTML = userscore;
     switch(user_choice){
         case 'r':
-            display_msg.innerHTML = `Rock (user) beats Scissors (comp), You win! 🎊`;
+            display_msg.innerHTML = `Rock(user) beats Scissors(comp), You win! 🎊`;
             break;
         case 'p':
-            display_msg.innerHTML = `Paper (user) covers Rock (comp), You win! 🎊`;
+            display_msg.innerHTML = `Paper(user) covers Rock(comp), You win! 🎊`;
             break;
         case 's':
-            display_msg.innerHTML = 'Scissors (user) cuts Paper (comp), You win! 🎊';
+            display_msg.innerHTML = 'Scissors(user) cuts Paper(comp), You win! 🎊';
             break;
     }
 }
@@ -91,13 +91,13 @@ function lose(user_choice, compchoice) {
     compscore_span.innerHTML = compscore;
     switch(user_choice){
         case 's':
-            display_msg.innerHTML = `Rock (comp) beats Scissors (user), You lose.. 🫠`;
+            display_msg.innerHTML = `Rock(comp) beats Scissors(user), You lose.. 🫠`;
             break;
         case 'r':
-            display_msg.innerHTML = `Paper (comp) covers Rock (user), You lose.. 🫠`;
+            display_msg.innerHTML = `Paper(comp) covers Rock(user), You lose.. 🫠`;
             break;
         case 'p':
-            display_msg.innerHTML = 'Scissors (comp) cuts Paper (user), You lose.. 🫠';
+            display_msg.innerHTML = 'Scissors(comp) cuts Paper(user), You lose.. 🫠';
             break;
     }
 }
